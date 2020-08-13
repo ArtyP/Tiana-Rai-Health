@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tianarai.MainActivity">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?attr/colorPrimary"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:tabSelectedTextColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        app:tabTextColor="@android:color/black">
+
+      <android.support.design.widget.TabItem
+          android:id="@+id/tabAlarm"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/am_alarm" />
+
+      <android.support.design.widget.TabItem
+          android:id="@+id/tabText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/am_text" />
+
+      <android.support.design.widget.TabItem
+          android:id="@+id/tabHint"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/am_hint" />
+
+    </android.support.design.widget.TabLayout>
+
+  </RelativeLayout>
+</LinearLayout>

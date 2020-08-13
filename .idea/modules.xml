@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tablayout.iml" filepath="$PROJECT_DIR$/Tablayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tiana Rai Health-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tiana Rai Health-app.iml" group="Tiana Rai Health/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tiana_Rai_Health.iml" filepath="$PROJECT_DIR$/.idea/modules/Tiana_Rai_Health.iml" group="Tiana_Rai_Health" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

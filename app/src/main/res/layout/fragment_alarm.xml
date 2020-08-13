@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".AMAlarmFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/am_alarm_warning" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_set_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_date_range_24px"
+        android:text="@string/date_button"
+
+        app:backgroundTint="@color/colorWhite"
+        android:drawableStart="@drawable/ic_date_range_24px" />
+
+    <CheckBox
+        android:id="@+id/checkbox_1800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_1800" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_2000" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2130"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_2130" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2145"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_2145" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_2200" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_second_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_date_range_24px"
+        android:enabled="false"
+
+        android:text="Date Button 2"
+        app:backgroundTint="@color/colorWhite" />
+
+    <CheckBox
+        android:id="@+id/checkbox_0600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_0600" />
+
+    <CheckBox
+        android:id="@+id/checkbox_0800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_0800" />
+
+    <CheckBox
+        android:id="@+id/checkbox_1000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="true"
+        android:padding="15dp"
+        android:text="@string/am_alarm_1000" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/am_alarm_set"
+        app:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>
