@@ -1,6 +1,8 @@
 package com.tianarai;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.GestureDetector;
@@ -50,7 +52,9 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
         gestureDetector = new GestureDetector(getContext(), new GestureListener());
-        currentHint = 0;
+
+        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        currentHint = sharedPref.getInt(getString(R.string.am_current_hint), 0);
 
         return inflater.inflate(R.layout.fragment_call, container, false);
     }
@@ -82,16 +86,27 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
         return gestureDetector.onTouchEvent(event);
     }
 
+    private void saveCurrentHint() {
+        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt(getString(R.string.am_current_hint), currentHint);
+        editor.commit();
+    }
+
     private void hintUp() {
         if (currentHint < hints.length-1)
             currentHint++;
         else currentHint = 0;
+
+        saveCurrentHint();
     }
 
     private void hintDown() {
         if (currentHint > 0)
             currentHint--;
         else currentHint = hints.length-1;
+
+        saveCurrentHint();
     }
 
     void onSwipeRight() {
