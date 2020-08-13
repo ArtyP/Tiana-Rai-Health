@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Андрекс Мориц</string>
+  <string name="app_name">Андреaс Мориц</string>
 
   <!-- TODO: Remove or change this placeholder text -->
   <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -38,4 +38,17 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Тупая кнопка</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+  <string name="hint_000">Свайпнуть верх или вниз, чтобы увидеть другие подсказки</string>
+  <string name="hint_001">Мое первое андроид приложение</string>
+  <string name="hint_002">Турбо чистка</string>
+  <string name="hint_003">Не жульничать во время чистки</string>
+  <string name="hint_004">Кто первый встал — того и тапки.</string>
+  <string name="hint_005">Не зарься на кусок, который не проглотишь.</string>
+  <string name="hint_006">Любопытной Варваре на базаре нос оторвали.</string>
+  <string name="hint_007">Рука руку моет.</string>
+  <string name="hint_008">Слово страшнее пистолета.</string>
+  <string name="hint_009">недоученный хуже неученого</string>
+  <string name="hint_010">Ложка дегтя в бочке меда.</string>
+  <string name="hint_012">Без труда не выловишь и рыбку из пруда.</string>
+  <string name="hint_011">Лучше синица в руках, чем журавль в небе.</string>
 </resources>

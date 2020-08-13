@@ -35,7 +35,23 @@
     ]]>
   </string>
   <string name="date_button">Date Button</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+  <string name="title_activity_fullscreen">FullscreenActivity</string>
+  <string name="dummy_button">Dummy Button</string>
+  <string name="dummy_content">DUMMY\nCONTENT</string>
+
+  <string name="hint_000">Swipe up  and down to see more hints</string>
+  <string name="hint_001">My first Android app</string>
+  <string name="hint_002">Turbo cleanse</string>
+  <string name="hint_003">Do not cheat</string>
+  <string name="hint_004">The early bird catches the worm</string>
+  <string name="hint_005">Don’t bite off more than you can chew</string>
+  <string name="hint_006">Curiosity killed the cat.</string>
+  <string name="hint_007">You scratch my back, I’ll scratch yours.</string>
+  <string name="hint_008">The pen is mightier than the sword.</string>
+  <string name="hint_009">A little knowledge is a dangerous thing.</string>
+  <string name="hint_010">One drop of poison infects the whole tun of wine.</string>
+  <string name="hint_011">You cannot teach old dogs new tricks.</string>
+  <string name="hint_012">Where there\'s muck there\'s brass.</string>
+
+
 </resources>
