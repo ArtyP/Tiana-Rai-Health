@@ -1,0 +1,41 @@
+<resources>
+  <string name="app_name">Андрекс Мориц</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+
+  <string name="am_text">Текст</string>
+  <string name="am_alarm">Будильник</string>
+  <string name="am_hint">Подсказки</string>
+
+  <string name="am_alarm_set">Set Alarm</string>
+  <string name="am_alarm_warning">This list of alarms will be set</string>
+  <string name="am_alarm_1800">18:00 Выпить первую порцию</string>
+  <string name="am_alarm_2000">20:00 Выпить вторуб порцию</string>
+  <string name="am_alarm_2130">21:30 Турбо чистка</string>
+  <string name="am_alarm_2145">21:45 Приготовить сок</string>
+  <string name="am_alarm_2200">22:00 Выпить волшебный сок</string>
+  <string name="am_alarm_0600">06:00 Выпить третью порцию</string>
+  <string name="am_alarm_0800">08:00 Выпить четвертую порцию</string>
+  <string name="am_alarm_1000">10:00 Выпить фруктовый сок</string>
+
+  <string name="htmlAMCleansingText">
+    <![CDATA[
+        <b>The main phase: The liver cleansing and excretion</b>
+        4 tablespoons of Epsom salts dissolved in 720 ml of water, to Выпить in four portions (180 ml per glass). One of the main tasks of Epsom salts is to make the bile ducts wider, allowing the stones to glide through easily. Moreover, it cleans waste products that can hinder the excretion of stones.
+        Выпить the first two portions between 6-8 P.M.
+        <ul>
+            <li>9:30 P.M. No bowel movement? Perform an enema</li>
+            <li>9.45 P.M. Press one grapefruit or alternatively 1 orange and 1 lemon; the juice is placed in a sealable vessel or glass. Add 120 ml of olive oil. Shake this until the solution is watery.</li>
+            <li>10 P.M. Stand next to your bed (do not sit down!) and Выпить the solution quickly, ideally at a time, and in no more than 5 minutes. Lie down with elevated upper body (use 1 or 2 pillows), or alternatively, pull to the right side and the knees towards your head. Stay in this position for at least 20 minutes absolutely calm and steer attention to your liver. Go to sleep.</li>
+            <li>6 A.M. The next day (Day 7), Выпить the third portion of the dissolved Epsom salts. Gymnastics or yoga is recommended. If you are tired, return to bed.</li>
+            <li>8 A.M. Last portion of the dissolved Epsom salts.</li>
+            <li>10 A.M. Выпить freshly squeezed fruit juice. Half an hour later you can eat one or two pieces of fresh fruit. An hour later you can eat a light meal.</li>
+        </ul>
+    ]]>
+  </string>
+  <string name="date_button">Date Button</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Тупая кнопка</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
