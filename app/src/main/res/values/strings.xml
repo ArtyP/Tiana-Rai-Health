@@ -53,6 +53,10 @@
   <string name="hint_010">One drop of poison infects the whole tun of wine.</string>
   <string name="hint_011">You cannot teach old dogs new tricks.</string>
   <string name="hint_012">Where there\'s muck there\'s brass.</string>
+  <string name="am_content_caption">Content</string>
+  <string name="am_content_1">Theme 1</string>
+  <string name="am_content_2">Theme 2</string>
+  <string name="am_content_3">Theme 3</string>
 
 
 </resources>

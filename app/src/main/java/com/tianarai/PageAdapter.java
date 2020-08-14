@@ -25,7 +25,8 @@ public class PageAdapter extends FragmentPagerAdapter {
                 return new AMAlarmFragment();
             case 1:
                 //return new StatusFragment();
-                return new AMTextFragment();
+                //return new AMTextFragment();
+                return new AMMenuFragment();
             case 2:
                 return new CallFragment();
             default:

@@ -51,4 +51,8 @@
   <string name="hint_010">Ложка дегтя в бочке меда.</string>
   <string name="hint_012">Без труда не выловишь и рыбку из пруда.</string>
   <string name="hint_011">Лучше синица в руках, чем журавль в небе.</string>
+    <string name="am_content_caption">Содержание</string>
+  <string name="am_content_1">Тема 1</string>
+  <string name="am_content_2">Тема 2</string>
+  <string name="am_content_3">Тема 3</string>
 </resources>
