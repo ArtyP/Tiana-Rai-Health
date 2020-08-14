@@ -64,10 +64,6 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
         inflater.inflate(R.menu.menu_calls, menu);
         tvHint = getView().findViewById(R.id.tvHint);
         tvHint.setText(hints[currentHint]);
-        /*tvHint.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.slide_in_left));*/
-
-        /*Animation aniSlide = AnimationUtils.loadAnimation(getContext(), R.anim.slide_up);
-        tvHint.startAnimation(aniSlide);*/
 
         getView().setOnTouchListener(this);
     }

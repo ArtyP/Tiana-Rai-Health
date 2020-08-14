@@ -1,120 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    tools:context=".AMAlarmFragment">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/am_alarm_warning" />
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".AMAlarmFragment">
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/button_set_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_date_range_24px"
-        android:text="@string/date_button"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/am_alarm_warning" />
 
-        app:backgroundTint="@color/colorWhite"
-        android:drawableStart="@drawable/ic_date_range_24px" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_set_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_date_range_24px"
+            android:drawableLeft="@drawable/ic_date_range_24px"
 
-    <CheckBox
-        android:id="@+id/checkbox_1800"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_1800" />
+            android:text="@string/date_button"
+            app:backgroundTint="@color/colorWhite" />
 
-    <CheckBox
-        android:id="@+id/checkbox_2000"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_2000" />
+        <CheckBox
+            android:id="@+id/checkbox_1800"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_1800" />
 
-    <CheckBox
-        android:id="@+id/checkbox_2130"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_2130" />
+        <CheckBox
+            android:id="@+id/checkbox_2000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_2000" />
 
-    <CheckBox
-        android:id="@+id/checkbox_2145"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_2145" />
+        <CheckBox
+            android:id="@+id/checkbox_2130"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_2130" />
 
-    <CheckBox
-        android:id="@+id/checkbox_2200"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_2200" />
+        <CheckBox
+            android:id="@+id/checkbox_2145"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_2145" />
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/button_second_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_date_range_24px"
-        android:enabled="false"
+        <CheckBox
+            android:id="@+id/checkbox_2200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_2200" />
 
-        android:text="Date Button 2"
-        app:backgroundTint="@color/colorWhite" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_second_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_date_range_24px"
+            android:drawableLeft="@drawable/ic_date_range_24px"
 
-    <CheckBox
-        android:id="@+id/checkbox_0600"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_0600" />
+            android:enabled="false"
+            android:text="Date Button 2"
+            app:backgroundTint="@color/colorWhite" />
 
-    <CheckBox
-        android:id="@+id/checkbox_0800"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_0800" />
+        <CheckBox
+            android:id="@+id/checkbox_0600"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_0600" />
 
-    <CheckBox
-        android:id="@+id/checkbox_1000"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/colorPrimary"
-        android:checked="true"
-        android:padding="15dp"
-        android:text="@string/am_alarm_1000" />
+        <CheckBox
+            android:id="@+id/checkbox_0800"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_0800" />
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/button_set_alarm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="@string/am_alarm_set"
-        app:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/colorWhite"
-        android:layout_centerInParent="true" />
+        <CheckBox
+            android:id="@+id/checkbox_1000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/am_alarm_1000" />
 
-</LinearLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_set_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/am_alarm_set"
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:visibility="invisible" />
+    </LinearLayout>
+</ScrollView>
