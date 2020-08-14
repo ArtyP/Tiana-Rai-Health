@@ -32,15 +32,28 @@ public class AMMenuFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Fragment fragment = null;
         switch (view.getId()) {
             case R.id.button_theme_1:
+                changeFragment(R.string.htmlAMCleansingText);
                 break;
             case R.id.button_theme_2:
+                changeFragment(R.string.htmlAMCleansingText_1);
                 break;
             case R.id.button_theme_3:
+                changeFragment(R.string.htmlAMCleansingText_2);
                 break;
         }
+    }
+
+    protected void changeFragment(int id) {
+        Bundle args = new Bundle();
+        args.putInt("resId", id);
+
+        Fragment fragment = new AMTextFragment();
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.container, fragment);
+        fragment.setArguments(args);
+        ft.commit();
     }
 
     protected void addClick(int id) {

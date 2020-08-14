@@ -30,7 +30,10 @@ public class AMTextFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        String formattedText = getString(R.string.htmlAMCleansingText);
+        int resID = getArguments().getInt("resId", 0);
+        if (resID == 0) return;
+
+        String formattedText = getString(resID);
         TextView tv = view.findViewById(R.id.textview_am);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

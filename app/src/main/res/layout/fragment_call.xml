@@ -13,7 +13,6 @@
       android:layout_gravity="center_vertical|center_horizontal"
       android:fontFamily="@font/roboto_thin_italic"
       android:padding="30dp"
-      android:text="Пример Текста"
       android:textSize="30sp" />
 
 </FrameLayout>
