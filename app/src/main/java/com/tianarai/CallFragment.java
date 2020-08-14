@@ -61,7 +61,7 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_calls, menu);
+        //inflater.inflate(R.menu.menu_calls, menu);
         tvHint = getView().findViewById(R.id.tvHint);
         tvHint.setText(hints[currentHint]);
 
@@ -70,10 +70,10 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_call) {
+        /*if (item.getItemId() == R.id.action_call) {
             Toast.makeText(getActivity(), "Clicked on " + item.getTitle(), Toast.LENGTH_SHORT)
                     .show();
-        }
+        }*/
         return true;
     }
 

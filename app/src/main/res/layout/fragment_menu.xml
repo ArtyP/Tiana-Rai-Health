@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
         tools:context=".AMAlarmFragment">
 
         <Button
+            android:id="@+id/button_theme_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorWhite"
@@ -22,9 +24,11 @@
             android:drawableRight="@drawable/ic_baseline_chevron_right_24"
             android:gravity="left|center_vertical"
             android:padding="15dp"
-            android:text="@string/am_content_1" />
+            android:text="@string/am_content_1"
+            />
 
         <Button
+            android:id="@+id/button_theme_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorWhite"
@@ -35,6 +39,7 @@
             android:text="@string/am_content_2" />
 
         <Button
+            android:id="@+id/button_theme_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorWhite"
