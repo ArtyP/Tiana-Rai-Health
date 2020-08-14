@@ -1,8 +1,12 @@
 package com.tianarai;
 
 import android.app.DatePickerDialog;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -46,11 +50,12 @@ public class AMAlarmFragment extends Fragment implements View.OnClickListener {
         addClick(R.id.button_set_date);
         addClick(R.id.button_set_alarm);
 
-        addClick(R.id.checkbox_1800);
-        addClick(R.id.checkbox_2000);
-        addClick(R.id.checkbox_2130);
-        addClick(R.id.checkbox_2145);
-        addClick(R.id.checkbox_2200);
+        addClick(R.id.button_1800);
+        addClick(R.id.button_2000);
+        addClick(R.id.button_2200);
+        addClick(R.id.button_0600);
+        addClick(R.id.button_0800);
+        //addClick(R.id.checkbox_2200);
 
         startDate = Calendar.getInstance();
         Date currentTime = startDate.getTime();
@@ -85,14 +90,13 @@ public class AMAlarmFragment extends Fragment implements View.OnClickListener {
     }
 
     public void onClick(View v) {
+        Button button = (Button)v;
         switch (v.getId()) {
             case R.id.button_set_alarm:
                 //Toast.makeText(v.getContext(), R.string.am_alarm_set, 5000).show();
                 alarm.setAlarm(v.getContext());
                 break;
             case R.id.button_set_date:
-                //Calendar c = Calendar.getInstance();
-
                 DatePickerDialog dpDialog = new DatePickerDialog(
                         v.getContext(),
                         R.style.DialogTheme,
@@ -105,7 +109,21 @@ public class AMAlarmFragment extends Fragment implements View.OnClickListener {
 
                 dpDialog.show();
                 break;
+            case R.id.button_1800: toggleAlarm(button, 0); break;
+            case R.id.button_2000: toggleAlarm(button, 1); break;
+            case R.id.button_2200: toggleAlarm(button, 2); break;
+            case R.id.button_0600: toggleAlarm(button, 3); break;
+            case R.id.button_0800: toggleAlarm(button, 4); break;
+
         }
+    }
+
+    private void toggleAlarm(Button button, int index) {
+        alarms[index] = !alarms[index];
+        if (alarms[index])
+            button.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_baseline_volume_up_24, 0);
+        else
+            button.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_baseline_volume_off_24, 0);
     }
 
     public void setDateText() {
