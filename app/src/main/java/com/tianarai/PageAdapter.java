@@ -28,7 +28,7 @@ public class PageAdapter extends FragmentPagerAdapter {
                 //return new AMTextFragment();
                 return new AMMenuFragment();
             case 2:
-                return new CallFragment();
+                return new HintFragment();
             default:
                 return null;
         }

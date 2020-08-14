@@ -16,13 +16,12 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CallFragment extends Fragment implements View.OnTouchListener {
+public class HintFragment extends Fragment implements View.OnTouchListener {
 
     private int[] hints = {
             R.string.hint_000,
@@ -56,7 +55,7 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
         SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
         currentHint = sharedPref.getInt(getString(R.string.am_current_hint), 0);
 
-        return inflater.inflate(R.layout.fragment_call, container, false);
+        return inflater.inflate(R.layout.fragment_hint, container, false);
     }
 
     @Override
@@ -64,6 +63,8 @@ public class CallFragment extends Fragment implements View.OnTouchListener {
         //inflater.inflate(R.menu.menu_calls, menu);
         tvHint = getView().findViewById(R.id.tvHint);
         tvHint.setText(hints[currentHint]);
+        Animation aniSlide = AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_in);
+        tvHint.startAnimation(aniSlide);
 
         getView().setOnTouchListener(this);
     }
