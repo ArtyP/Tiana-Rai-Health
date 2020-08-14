@@ -11,6 +11,7 @@
 
   <string name="am_alarm_set">Set Alarm</string>
   <string name="am_alarm_warning">This list of alarms will be set</string>
+  <string name="am_alarm_1700">17:00 Prepare magnesium</string>
   <string name="am_alarm_1800">18:00 Drink first portion</string>
   <string name="am_alarm_2000">20:00 Drink second portion</string>
   <string name="am_alarm_2130">21:30 Turbo Cleanse</string>
@@ -19,6 +20,7 @@
   <string name="am_alarm_0600">06:00 Drink third portion</string>
   <string name="am_alarm_0800">08:00 Drink forth portion</string>
   <string name="am_alarm_1000">10:00 Drink fruit juice</string>
+
 
   <string name="htmlAMCleansingText">
     <![CDATA[

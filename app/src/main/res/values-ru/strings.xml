@@ -10,6 +10,7 @@
 
   <string name="am_alarm_set">Set Alarm</string>
   <string name="am_alarm_warning">This list of alarms will be set</string>
+  <string name="am_alarm_1700">17:00 Приготовить магнезию</string>
   <string name="am_alarm_1800">18:00 Выпить первую порцию</string>
   <string name="am_alarm_2000">20:00 Выпить вторуб порцию</string>
   <string name="am_alarm_2130">21:30 Турбо чистка</string>
