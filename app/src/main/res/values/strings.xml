@@ -59,7 +59,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </string>
   <string name="date_button">Date Button</string>
   <string name="title_activity_fullscreen">FullscreenActivity</string>
-  <string name="dummy_button">Dummy Button</string>
+  <string name="dummy_button">I got it</string>
   <string name="dummy_content">DUMMY\nCONTENT</string>
 
   <string name="hint_000">Swipe up  and down to see more hints</string>

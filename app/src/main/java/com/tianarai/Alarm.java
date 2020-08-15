@@ -57,7 +57,7 @@ public class Alarm extends BroadcastReceiver
         //CreateFullScreenNotification(context);
 
         //if (FullscreenActivity.FULL_SCREEN_ACTION.equals(intent.getAction()))
-            //FullscreenActivity.CreateFullScreenNotification(context);
+            FullscreenActivity.CreateFullScreenNotification(context);
         //context.startActivity(intent);
         /*Intent alarmIntent = new Intent(context, FullscreenActivity.class);
         context.startActivity(alarmIntent);
@@ -68,8 +68,8 @@ public class Alarm extends BroadcastReceiver
         context.startActivity(i);*/
 
         //start activity
-        intent.setComponent(new ComponentName("com.tianarai", "com.tianarai.FullscreenActivity"));
-        context.startActivity(intent);
+        /*intent.setComponent(new ComponentName("com.tianarai", "com.tianarai.FullscreenActivity"));
+        context.startActivity(intent);*/
 
         Toast.makeText(context, "Alarm:onReceive 2", Toast.LENGTH_SHORT).show();
     }
@@ -91,7 +91,7 @@ public class Alarm extends BroadcastReceiver
 
         Intent alarmIntent = new Intent(context, Alarm.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1, alarmIntent, 0);
-        int interval = 20000;
+        int interval = 10000;
         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             manager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + interval, pendingIntent);
         } else {
@@ -99,11 +99,11 @@ public class Alarm extends BroadcastReceiver
         }*/
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            manager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), pendingIntent);
+            manager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + interval, pendingIntent);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            manager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), pendingIntent);
+            manager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + interval, pendingIntent);
         } else {
-            manager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), pendingIntent);
+            manager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + interval, pendingIntent);
         }
         //Toast.makeText(context, "Alarm:setAlarm", Toast.LENGTH_SHORT).show();
 
